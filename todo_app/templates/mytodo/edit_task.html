@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+タスク編集
+{% endblock title %}
+
+{% block contents %}
+<div class="edit-task">
+    <h1>タスク編集</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">保存</button>
+    </form>
+</div>
+{% endblock contents %}

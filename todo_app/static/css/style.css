@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 50px 220px;
+    background-color: rgb(212, 228, 253);
+    color: rgb(3, 3, 3);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+
+.index a {
+    display: inline-block;
+}
+
+.index a:hover {
+    background-color: #0056b3;
+}
+
+.index ul {
+    list-style-type: none;
+}
+
+.index li {
+    background-color: rgb(192, 237, 251);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.index li.complete {
+    text-decoration: line-through;
+    color: #c5c5c5;
+}
+
+/* タスクヘッダー内のボタンを右寄せ */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.task-actions {
+    display: flex; /* ボタンを横並びに表示 */
+    justify-content: flex-end; /* ボタンを右寄せ */
+    align-items: center;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.task-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.task-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px; /* 日付とボタンの間に間隔を追加 */
+}
+
+.task-description {
+    font-size: 16px;
+}
+
+.task-section {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #c3d5fa; /* 枠のスタイル */
+    border-radius: 8px; /* 角を丸くする */
+    background-color: #f9f9f9; /* 背景色を追加 */
+}
+
+.task-section h2 {
+    margin-bottom: 15px; /* 見出しとリストの間に間隔を追加 */
+}
+
+
+
+.add {
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.add form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.add form input,
+.add form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add form button:hover {
+    background-color: #0056b3;
+}
+
+
+.add .field-error {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* styles.css */
+.add_btn{
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-delete,
+.btn-edit {
+    font-size: 10px; /* ボタンのフォントサイズをさらに小さく */
+    padding: 3px 6px; /* ボタンの余白を調整 */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 5px; /* ボタン間の間隔を追加 */
+    margin-bottom: 5px;
+    padding: 10px 15px;
+}
+
+.btn-delete {
+    background-color: #ff0000; /* 削除ボタンの背景色を赤に変更 */
+    margin-bottom: 5px;
+    padding: 10px 15px;
+}
+
+.btn-edit:hover {
+    background-color: #495057;
+}
+
+.edit-task {
+    max-width: 600px; /* 編集フォームの最大幅を設定 */
+    margin: 20px auto; /* 上下に余白を持たせて中央揃え */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-task form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.edit-task form input,
+.edit-task form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.edit-task form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-task form button:hover {
+    background-color: #0056b3;
+} 
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
